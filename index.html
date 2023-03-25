@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>school</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo"><a href=""><strong>school</strong></a></div>
+        <div class="burger "><i class="ri-menu-line icon"></i></div>
+        <nav class="navbar">
+            <ul class="links">
+                <a href="">
+                    <li>Home</li>
+                </a>
+                <a href="">
+                    <li>About</li>
+                </a>
+                <a href="">
+                    <li>Service</li>
+                </a>
+                <a href="">
+                    <li>Contact</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="form">
+            <h1>Student information</h1>
+            <form action="" id="form">
+                <label for="fname">Full name :</label>
+                <input type="text" name="fname" id="fname" value="" required>
+
+                <label for="birth">Date of birth :</label>
+                <input type="date" name="birth" id="birth" value="" required>
+
+                <label for="">Gender :</label>
+                <label>
+                    <input type="radio" name="gender" id="gender" value="Male" required>
+                    Male
+                </label>
+                <label>
+                    <input type="radio" name="gender" id="gender" value="Female" required>
+                    Female
+                </label>
+
+                <label for="number">Phone number :</label>
+                <input type="text" name="number" id="number" value="" required>
+
+                <label for="grade">Grade :</label>
+                <input type="number" name="grade" id="grade" value="" required>
+                <br>
+                <button type="submit">Add</button>
+            </form>
+        </div>
+        <div class="table">
+            <table id="resultTable">
+                <tr>
+                    <th>#</th>
+                    <th>Full name</th>
+                    <th>Date of birth</th>
+                    <th>Gender</th>
+                    <th>phone number</th>
+                    <th>Grade</th>
+
+
+
+                </tr>
+            </table>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+<script src="./app.js"></script>
+<script src="./higherOrderFunction.js"></script>
+
+</html>
