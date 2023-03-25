@@ -1,0 +1,218 @@
+/* --------------------------------------------- nav bar ----------------------------------------- */
+* {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+header {
+    background-color: rgb(255, 255, 255);
+    box-shadow: inset 0px -13px 25px -27px #000000;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.logo strong {
+    display: inline-block;
+    padding: 10px;
+    font-size: 1.5rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.burger {
+    background-color: aliceblue;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 20px;
+    right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+
+.navbar {
+    display: none;
+
+}
+
+.mobile-menu {
+    background-color: rgba(255, 255, 255, 0.379);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.icons {
+    display: flex;
+    padding: 15px;
+
+
+}
+
+.icons a li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 15px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.links a {
+    padding: 20px;
+}
+
+.links a li {
+    font-size: 1.2rem;
+    display: inline-block;
+    padding: 2px;
+    position: relative;
+}
+
+.links a li::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #000000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-out;
+}
+
+.links a li:hover::after {
+    transform: scaleX(1);
+}
+
+
+.icon {
+    font-size: 1.6rem;
+}
+
+
+
+@media screen and (min-width: 767px) {
+
+    .burger {
+        display: none;
+    }
+
+    header {
+        justify-content: space-between;
+    }
+
+    .logo {
+        padding: 5px 15px;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .links {
+        flex-direction: row;
+        margin-right: 5vw;
+    }
+
+    .links a {
+        padding: 0 20px;
+    }
+
+    .icons {
+        padding: 0;
+        order: 2;
+    }
+}
+
+/* --------------------------------------------- nav bar ----------------------------------------- */
+/* --------------------------------------------- form ----------------------------------------- */
+.form h1 {
+    font-size: larger;
+    text-align: center;
+}
+
+.form form {
+    display: grid;
+    width: 85%;
+    margin: auto;
+    margin-top: 2rem;
+
+}
+
+.form {
+    width: 50%;
+    margin: auto;
+    background-color: rgba(128, 128, 128, 0.3);
+    border-radius: 30px;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+.form input {
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    height: 1.5rem;
+}
+.form button{
+    width: 30%;
+    margin: auto;
+}
+/* --------------------------------------------- form----------------------------------------- */
+/* --------------------------------------------- table ----------------------------------------- */
+.table{
+    display: flex;
+    justify-content: center;
+}
+.table table{ 
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+.table th , td {
+    padding-right: 70px;
+    padding-top: 20px;
+}
+
+@media (max-width:1000px) {
+    .table th , td{
+        padding-right: 20px;
+        font-size: 10px;
+    }
+    .form form {
+        display: grid;
+        width: auto;
+        margin: auto;
+        margin-top: 2rem;
+    
+    }
+}
