@@ -184,35 +184,58 @@ header {
     margin-bottom: 1rem;
     height: 1.5rem;
 }
-.form button{
+
+.form select {
+    /* overflow-y: hidden; */
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    padding: 0.2rem;
+}
+
+.form button {
     width: 30%;
     margin: auto;
 }
+
 /* --------------------------------------------- form----------------------------------------- */
 /* --------------------------------------------- table ----------------------------------------- */
-.table{
-    display: flex;
-    justify-content: center;
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 20%;
+    margin: auto;
+    margin-bottom: 2rem ;
+    margin-top: 2rem;
 }
-.table table{ 
-    margin-top: 3rem;
-    margin-bottom: 5rem;
-}
-.table th , td {
-    padding-right: 70px;
-    padding-top: 20px;
+.card img {
+    width: 100%;
 }
 
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    text-align: center;
+    padding: 1rem 
+}
+
+/* --------------------------------------------- table ----------------------------------------- */
+
 @media (max-width:1000px) {
-    .table th , td{
+
+    .table th,
+    td {
         padding-right: 20px;
         font-size: 10px;
     }
+
     .form form {
         display: grid;
         width: auto;
         margin: auto;
         margin-top: 2rem;
-    
+
     }
 }
