@@ -32,6 +32,7 @@
     </header>
 
     <main>
+
         <div class="form">
             <h1>Student information</h1>
             <form action="" id="form">
@@ -51,29 +52,28 @@
                     Female
                 </label>
 
+                <label for="major">Major :</label>
+                <select name="major" id="major" size="3">
+                    <option value="Administration">Administration</option>
+                    <option value="IT">IT</option>
+                    <option value="Science">Science</option>
+                    <option value="Art">Art</option>
+                </select>
+
                 <label for="number">Phone number :</label>
                 <input type="text" name="number" id="number" value="" required>
 
-                <label for="grade">Grade :</label>
-                <input type="number" name="grade" id="grade" value="" required>
+                <label for="">Image :</label>
+                <input type="text" name="img" id="img" placeholder="Image URL"
+                    value="./imges/placeholder-profile-sq-300x300.jpg" required>
+
                 <br>
                 <button type="submit">Add</button>
             </form>
         </div>
-        <div class="table">
-            <table id="resultTable">
-                <tr>
-                    <th>#</th>
-                    <th>Full name</th>
-                    <th>Date of birth</th>
-                    <th>Gender</th>
-                    <th>phone number</th>
-                    <th>Grade</th>
-
-
-
-                </tr>
-            </table>
+        <div class="container">
+            <div id="card" class="card">
+            </div>
         </div>
     </main>
     <footer>
